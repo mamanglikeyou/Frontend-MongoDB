@@ -18,7 +18,7 @@ const EditUser = () => {
   }, []);
 
   const getUserById = async () => {
-    const response = await axios.get(`http://localhost:5000/users/${id}`);
+    const response = await axios.get(`https://dani-backend-mongodb.vercel.app/users/${id}`);
     setName(response.data.name);
     setEmail(response.data.email);
     setGender(response.data.gender);
