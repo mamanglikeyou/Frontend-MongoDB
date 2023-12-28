@@ -31,7 +31,7 @@ const EditUser = () => {
   const updateUser = async (e) => {
     e.preventDefault();
     try {
-      await axios.patch(`http://localhost:5000/users/${id}`, {
+      await axios.patch(`https://dani-backend-mongodb.vercel.app/users/${id}`, {
         name,
         email,
         gender,
